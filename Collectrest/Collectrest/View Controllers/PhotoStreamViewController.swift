@@ -19,6 +19,11 @@ class PhotoStreamViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let layout = collectionView.collectionViewLayout as? CollectrestLayout {
+            layout.delegate = self
+        }
+        
         if let patternImage = UIImage(named: "Pattern") {
             view.backgroundColor = UIColor(patternImage: patternImage)
         }
@@ -42,5 +47,12 @@ extension PhotoStreamViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
         return CGSize(width: itemSize, height: itemSize)
+    }
+}
+
+extension PhotoStreamViewController: CollectrestLayoutDelegate {
+    
+    func collectionView(collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        return photos[indexPath.item].image.size.height
     }
 }

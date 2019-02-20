@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADA0069A221D2CF2009DEFD2 /* CollectrestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA00699221D2CF2009DEFD2 /* CollectrestLayout.swift */; };
 		ADD09503221D0B1D000DEA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD09502221D0B1D000DEA0B /* AppDelegate.swift */; };
 		ADD09508221D0B1D000DEA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD09506221D0B1D000DEA0B /* Main.storyboard */; };
 		ADD0950A221D0B29000DEA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD09509221D0B29000DEA0B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADA00699221D2CF2009DEFD2 /* CollectrestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectrestLayout.swift; sourceTree = "<group>"; };
 		ADD094FF221D0B1D000DEA0B /* Collectrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD09502221D0B1D000DEA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD09507221D0B1D000DEA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		ADD0951E221D0EBD000DEA0B /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				ADA00699221D2CF2009DEFD2 /* CollectrestLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD09529221D1564000DEA0B /* PhotoStreamViewController.swift in Sources */,
+				ADA0069A221D2CF2009DEFD2 /* CollectrestLayout.swift in Sources */,
 				ADD09521221D0F08000DEA0B /* Photo.swift in Sources */,
 				ADD09503221D0B1D000DEA0B /* AppDelegate.swift in Sources */,
 				ADD0952C221D1A89000DEA0B /* AnnotatedPhotoCell.swift in Sources */,
